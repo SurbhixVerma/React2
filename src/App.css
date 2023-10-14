@@ -1,0 +1,57 @@
+.phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #e0eb46, #ff9cce, #f076ea);
+  margin: 0;
+}
+
+.calculator {
+  background-color: rgba(251, 247, 218, 0.9);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This positions the buttons at the bottom */
+  position: relative;
+}
+
+.history {
+  text-align: left;
+  font-size: 16px;
+  max-height: 200px; /* Maximum history height */
+  overflow: auto; /* Add scrollbars if history exceeds max height */
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.display {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+}
+
+button {
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  border-radius: 0px;
+  background-color: #010c16;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ec3d8f;
+}
